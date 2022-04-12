@@ -18,7 +18,7 @@ import { listProductDetails } from "../actions/productActions";
 
 const ProductScreen = ({ match }) => {
   const [qty, setQty] = useState(1);
-    const navaigate = useNavigate();
+    const navigate = useNavigate();
   const { id } = useParams();
   const dispatch = useDispatch();
   const productDetails = useSelector((state) => state.productDetails);
@@ -29,7 +29,7 @@ const ProductScreen = ({ match }) => {
   }, [id, dispatch]);
 
   const addToCartHandler = () => {
-    navaigate('/cart/' + id + '?qty=' + qty);
+    navigate('/cart/' + id + '?qty=' + qty);
   };
 
   return (

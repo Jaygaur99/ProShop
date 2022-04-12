@@ -6,4 +6,5 @@ urlpatterns = [
     path('', views.getUsers, name='getUsers'),
     path('register/', views.registerUser, name='registerUser'),
     path('profile/', views.getUserProfile, name='getUserProfile'),
+    path('profile/update/', views.updateUserProfile, name='updateUserProfile'),
 ]

@@ -1,5 +1,1 @@
-frontend/node_modules
-myenv
-__pycache__
-.DS_Store
-.vscode
+myenv/
